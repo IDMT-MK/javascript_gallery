@@ -3,6 +3,12 @@
 const thumbs = document.querySelectorAll('.thumb');
 const main = document.querySelector('#main-image');
 const text = document.querySelector('#caption');
+const loading = document.getElementById('loading');
+
+function animation(){
+  loading.classList.add('loaded');
+}
+window.addEventListener('load', animation);
 
 // クリックで切り替え
 // thumbs.forEach(function(item, index) {
